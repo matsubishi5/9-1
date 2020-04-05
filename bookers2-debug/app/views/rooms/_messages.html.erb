@@ -1,0 +1,6 @@
+<% messages.each do |m| %>
+    <tr>
+        <td><%= m.content %></td>
+        <td><%= link_to m.user.name, user_path(m.user) %></td>
+    </tr>
+<% end %>
